@@ -1,0 +1,153 @@
+body {
+    font-family: 'Custom Language', arial, helvetica, sans serif;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    border: 1px solid black;
+    margin: auto;
+    width: 600px;
+    gap: 10px;
+}
+
+h1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    color: #77a91f;
+    border-bottom: dashed black 0.5px;
+    margin: 0;
+}
+
+fieldset {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 95%;
+}
+
+select {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    width: 100%;
+    background-color: white;
+}
+
+form div {
+    border: 1px solid #d7d7d7;
+    height: 36px;
+    color: #999;
+}
+
+.input-name {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.input-surname {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.input-mail {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.input-phone {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+textarea {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    width: 99%;
+    color: #999;
+}
+
+.input-booking {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    display: none;
+}
+
+input {
+    border: none;
+    padding: 10px;
+}
+
+button {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    color: white;
+    background-color: #007dbe;
+    width: 33%;
+    height: 36px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    h1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    fieldset {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 91%;
+    }
+    select {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 100%;
+        background-color: white;
+    }
+    .input-name {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    .input-surname {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    .input-mail {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+    .input-phone {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+    textarea {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+    .input-booking {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+        display: none;
+    }
+    button {
+        grid-column: 1 / 2;
+        grid-row: 9 / 10;
+    }
+}
